@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IEW</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="WordStyle.css">
+    
+        <script>
+            function findHindWord(self) {
+                var elist1 = document.querySelectorAll('#English1');
+                var elist2 = document.querySelectorAll('#English2');
+                var elist3 = document.querySelectorAll('#English3');
+
+                if(self.value == '단어 감추기') {
+                    var i = 0;
+                    while(i < elist1.length) {
+                        elist1[i].style.color = 'gainsboro';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < elist2.length) {
+                        elist2[i].style.color = 'gainsboro';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < elist3.length) {
+                        elist3[i].style.color = 'gainsboro';
+                        i = i + 1;
+                    }
+                    self.value='단어 보기';
+                }
+                else if(self.value == '단어 보기') {
+                    var i = 0;
+                    while(i < elist1.length) {
+                        elist1[i].style.color = 'green';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < elist2.length) {
+                        elist2[i].style.color = 'green';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < elist3.length) {
+                        elist3[i].style.color = 'green';
+                        i = i + 1;
+                    }
+                    self.value='단어 감추기';
+                }
+            }
+
+            function findHindMean(self) {
+                var mlist1 = document.querySelectorAll('#Mean1');
+                var mlist2 = document.querySelectorAll('#Mean2');
+                var mlist3 = document.querySelectorAll('#Mean3');
+
+                if(self.value == '뜻 감추기') {
+                    var i = 0;
+                    while(i < mlist1.length) {
+                        mlist1[i].style.color = 'green';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < mlist2.length) {
+                        mlist2[i].style.color = 'green';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < mlist3.length) {
+                        mlist3[i].style.color = 'green';
+                        i = i + 1;
+                    }
+                    self.value='뜻 보기';
+                }
+                else if(self.value == '뜻 보기') {
+                    var i = 0;
+                    while(i < mlist1.length) {
+                        mlist1[i].style.color = 'black';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < mlist2.length) {
+                        mlist2[i].style.color = 'black';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < mlist3.length) {
+                        mlist3[i].style.color = 'black';
+                        i = i + 1;
+                    }
+                    self.value='뜻 감추기';
+                }
+            }
+        </script>
+    </head>
+
+
+    <body>
+        <h1>IT English Word</h1>
+
+        <h6>19 CYM</h6>
+
+        <div id="grid">
+            <ol>
+                <ul><a href="Home.html">첫 화면</a></ul>
+                <ul><a href="Idiom.html">숙어</a></ul>
+                <ul><a href="QuestionWord.html">문제풀기</a></ul>
+            </ol>
+
+            <div>    
+                <div>
+                    <input id="wordBtn" type="button" value="단어 감추기" onclick="findHindWord(this)">
+                    <input id="meanBtn" type="button" value="뜻 감추기" onclick="findHindMean(this)">
+                </div>
+
+                <table id="table" border="1" bordercolor="white">
+                    <th id="title">단어</th>
+                    <th id="title">뜻</th>
+                    <th id="title">단어</th>
+                    <th id="title">뜻</th>
+                    <th id="title">단어</th>
+                    <th id="title">뜻</th>
+        
+                    <tr id="title2" align="center">
+                        <td id="English1">software</td>
+                        <td id="Mean1">소프트웨어</td>
+                        <td id="English2">engineering</td>
+                        <td id="Mean2">공학</td>
+                        <td id="English3">reenginneering</td>
+                        <td id="Mean3">재공학</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">system</td>
+                        <td id="Mean1">시스템</td>
+                        <td id="English2">paper</td>
+                        <td id="Mean2">문서</td>
+                        <td id="English3">integrate</td>
+                        <td id="Mean3">통합</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">analysis</td>
+                        <td id="Mean1">분석</td>
+                        <td id="English2">restructuring</td>
+                        <td id="Mean2">재구성</td>
+                        <td id="English3">migration</td>
+                        <td id="Mean3">이식</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">communication</td>
+                        <td id="Mean1">소통</td>
+                        <td id="English2">simplicity</td>
+                        <td id="Mean2">단순성</td>
+                        <td id="English3">feedback</td>
+                        <td id="Mean3">피드백</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">courage</td>
+                        <td id="Mean1">용기</td>
+                        <td id="English2">respect</td>
+                        <td id="Mean2">존중</td>
+                        <td id="English3">sprint</td>
+                        <td id="Mean3">전력 질주</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">availability</td>
+                        <td id="Mean1">가용성</td>
+                        <td id="English2">utilization</td>
+                        <td id="Mean2">사용률</td>
+                        <td id="English3">throughput</td>
+                        <td id="Mean3">처리량</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">elicitation</td>
+                        <td id="Mean1">도출</td>
+                        <td id="English2">specification</td>
+                        <td id="Mean2">명세</td>
+                        <td id="English3">stakeholder</td>
+                        <td id="Mean3">이해관계자</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">things</td>
+                        <td id="Mean1">사물</td>
+                        <td id="English2">relationship</td>
+                        <td id="Mean2">관계</td>
+                        <td id="English3">diagram</td>
+                        <td id="Mean3">다이어그램</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">sequence</td>
+                        <td id="Mean1">순차</td>
+                        <td id="English2">selection</td>
+                        <td id="Mean2">선택</td>
+                        <td id="English3">condition</td>
+                        <td id="Mean3">조건</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">coupling</td>
+                        <td id="Mean1">결합도</td>
+                        <td id="English2">cohesion</td>
+                        <td id="Mean2">응집도</td>
+                        <td id="English3">abstraction</td>
+                        <td id="Mean3">추상화</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">interpreter</td>
+                        <td id="Mean1">해석자</td>
+                        <td id="English2">command</td>
+                        <td id="Mean2">명령</td>
+                        <td id="English3">state</td>
+                        <td id="Mean3">상태</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">object</td>
+                        <td id="Mean1">객체</td>
+                        <td id="English2">class</td>
+                        <td id="Mean2">클래스</td>
+                        <td id="English3">abstract</td>
+                        <td id="Mean3">추상화</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">fault</td>
+                        <td id="Mean1">오류</td>
+                        <td id="English2">failure</td>
+                        <td id="Mean2">실패</td>
+                        <td id="English3">defect</td>
+                        <td id="Mean3">결함</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">verification</td>
+                        <td id="Mean1">검증</td>
+                        <td id="English2">validation</td>
+                        <td id="Mean2">확인</td>
+                        <td id="English3">anomaly</td>
+                        <td id="Mean3">이상</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">sort</td>
+                        <td id="Mean1">정렬</td>
+                        <td id="English2">search</td>
+                        <td id="Mean2">검색</td>
+                        <td id="English3">index</td>
+                        <td id="Mean3">인덱스</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">synonym</td>
+                        <td id="Mean1">동의어</td>
+                        <td id="English2">collision</td>
+                        <td id="Mean2">충돌</td>
+                        <td id="English3">normalization</td>
+                        <td id="Mean3">정규화</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">structure</td>
+                        <td id="Mean1">데이터 구조</td>
+                        <td id="English2">operations</td>
+                        <td id="Mean2">연산</td>
+                        <td id="English3">constraints</td>
+                        <td id="Mean3">제약조건</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">attribute</td>
+                        <td id="Mean1">속성</td>
+                        <td id="English2">column</td>
+                        <td id="Mean2">열</td>
+                        <td id="English3">degree</td>
+                        <td id="Mean3">차수</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">tuple</td>
+                        <td id="Mean1">튜플</td>
+                        <td id="English2">row</td>
+                        <td id="Mean2">행</td>
+                        <td id="English3">cardinality</td>
+                        <td id="Mean3">기수(튜플의 수)</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">atomicity</td>
+                        <td id="Mean1">원자성</td>
+                        <td id="English2">consistency</td>
+                        <td id="Mean2">일관성</td>
+                        <td id="English3">isolation</td>
+                        <td id="Mean3">격리성, 고립성</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">durability</td>
+                        <td id="Mean1">영속성, 지속성</td>
+                        <td id="English2">aborted</td>
+                        <td id="Mean2">철회</td>
+                        <td id="English3">committed</td>
+                        <td id="Mean3">완료</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">inheritance</td>
+                        <td id="Mean1">상속</td>
+                        <td id="English2">garbage</td>
+                        <td id="Mean2">쓰레기</td>
+                        <td id="English3">collector</td>
+                        <td id="Mean3">수집가</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">confidentiality</td>
+                        <td id="Mean1">기밀성</td>
+                        <td id="English2">integrity</td>
+                        <td id="Mean2">무결성</td>
+                        <td id="English3">encryption</td>
+                        <td id="Mean3">암호화</td>
+                    </tr>
+                </table>
+            </div>    
+        </div>
+    </body>
+</html>

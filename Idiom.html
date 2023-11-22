@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IEI</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="IdiomStyle.css">
+    
+        <script>
+            function findHindWord(self) {
+                var elist1 = document.querySelectorAll('#English1');
+                var elist2 = document.querySelectorAll('#English2');
+                var elist3 = document.querySelectorAll('#English3');
+
+                if(self.value == '단어 감추기') {
+                    var i = 0;
+                    while(i < elist1.length) {
+                        elist1[i].style.color = 'gainsboro';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < elist2.length) {
+                        elist2[i].style.color = 'gainsboro';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < elist3.length) {
+                        elist3[i].style.color = 'gainsboro';
+                        i = i + 1;
+                    }
+                    self.value='단어 보기';
+                }
+                else if(self.value == '단어 보기') {
+                    var i = 0;
+                    while(i < elist1.length) {
+                        elist1[i].style.color = 'green';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < elist2.length) {
+                        elist2[i].style.color = 'green';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < elist3.length) {
+                        elist3[i].style.color = 'green';
+                        i = i + 1;
+                    }
+                    self.value='단어 감추기';
+                }
+            }
+
+            function findHindMean(self) {
+                var mlist1 = document.querySelectorAll('#Mean1');
+                var mlist2 = document.querySelectorAll('#Mean2');
+                var mlist3 = document.querySelectorAll('#Mean3');
+
+                if(self.value == '뜻 감추기') {
+                    var i = 0;
+                    while(i < mlist1.length) {
+                        mlist1[i].style.color = 'green';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < mlist2.length) {
+                        mlist2[i].style.color = 'green';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < mlist3.length) {
+                        mlist3[i].style.color = 'green';
+                        i = i + 1;
+                    }
+                    self.value='뜻 보기';
+                }
+                else if(self.value == '뜻 보기') {
+                    var i = 0;
+                    while(i < mlist1.length) {
+                        mlist1[i].style.color = 'black';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < mlist2.length) {
+                        mlist2[i].style.color = 'black';
+                        i = i + 1;
+                    }
+                    i = 0;
+                    while(i < mlist3.length) {
+                        mlist3[i].style.color = 'black';
+                        i = i + 1;
+                    }
+                    self.value='뜻 감추기';
+                }
+            }
+        </script>
+    </head>
+
+
+    <body>
+        <h1>IT English Idiom</h1>
+
+        <h6>19 CYM</h6>
+
+        <div id="grid">
+            <ol>
+                <ul><a href="Home.html">첫 화면</a></ul>
+                <ul><a href="Word.html">단어</a></ul>
+                <ul><a href="QuestionIdiom.html">문제풀기</a></ul>
+            </ol>
+
+            <div>    
+                <div>
+                    <input id="wordBtn" type="button" value="단어 감추기" onclick="findHindWord(this)">
+                    <input id="meanBtn" type="button" value="뜻 감추기" onclick="findHindMean(this)">
+                </div>
+
+                <table id="table" border="1" bordercolor="white">
+                    <th id="title">단어</th>
+                    <th id="title">뜻</th>
+                    <th id="title">단어</th>
+                    <th id="title">뜻</th>
+                    <th id="title">단어</th>
+                    <th id="title">뜻</th>
+        
+                    <tr id="title2" align="center">
+                        <td id="English1">Data Structure</td>
+                        <td id="Mean1">자료 구조</td>
+                        <td id="English2">Software Crisis</td>
+                        <td id="Mean2">소프트웨어 위기</td>
+                        <td id="English3">Reverse Engineering</td>
+                        <td id="Mean3">역공학</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Software Life Cycle</td>
+                        <td id="Mean1">소프트웨어 생명주기</td>
+                        <td id="English2">Waterfall Model</td>
+                        <td id="Mean2">폭포수 모형</td>
+                        <td id="English3">Spiral Model</td>
+                        <td id="Mean3">나선형 모형</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Response Time</td>
+                        <td id="Mean1">응답 시간</td>
+                        <td id="English2">Requirements Engineering</td>
+                        <td id="Mean2">요구공학</td>
+                        <td id="English3">Requirement Analysis</td>
+                        <td id="Mean3">요구사항 분석</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Conceptual Modeling</td>
+                        <td id="Mean1">개념 모델링</td>
+                        <td id="English2">System Boundary</td>
+                        <td id="Mean2">시스템 경계</td>
+                        <td id="English3">Data Flow Diagram(DFD)</td>
+                        <td id="Mean3">자료 흐름도</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Dependency Relation</td>
+                        <td id="Mean1">의존 관계</td>
+                        <td id="English2">Generalization Relation</td>
+                        <td id="Mean2">일반화 관계</td>
+                        <td id="English3">Aggregation Relation</td>
+                        <td id="Mean3">집합 관계</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Block Code</td>
+                        <td id="Mean1">블록 코드, 구분 코드</td>
+                        <td id="English2">Group Classification Code</td>
+                        <td id="Mean2">그룹 분류식 코드</td>
+                        <td id="English3">Decimal Code</td>
+                        <td id="Mean3">10진 분류 코드</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Sequence Code</td>
+                        <td id="Mean1">순차 코드</td>
+                        <td id="English2">Significant Digit Code</td>
+                        <td id="Mean2">표의 숫자 코드, 유효 숫자 코드</td>
+                        <td id="English3">Mnemonic Code</td>
+                        <td id="Mean3">기호 코드</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Structured Programming</td>
+                        <td id="Mean1">구조적 프로그래밍</td>
+                        <td id="English2">Procedural Programming</td>
+                        <td id="Mean2">절차적 프로그래밍</td>
+                        <td id="English3">Object Oriented Programming</td>
+                        <td id="Mean3">객체지향 프로그래밍</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Divide Conquer</td>
+                        <td id="Mean1">분할과 지배</td>
+                        <td id="English2">Information Hiding</td>
+                        <td id="Mean2">정보 은폐</td>
+                        <td id="English3">Data Abstraction</td>
+                        <td id="Mean3">자료 추상화</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Configuration Management</td>
+                        <td id="Mean1">형상 관리</td>
+                        <td id="English2">Configuration Identification</td>
+                        <td id="Mean2">형상 식별</td>
+                        <td id="English3">Configuration Control</td>
+                        <td id="Mean3">형상 통제</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Basic Path Testing</td>
+                        <td id="Mean1">기초 경로 검사</td>
+                        <td id="English2">Equivalence Partitioning</td>
+                        <td id="Mean2">동치 분할 검사</td>
+                        <td id="English3">Cause and Effect Graphing</td>
+                        <td id="Mean3">원인-효과 그래프 검사</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Error Forecast</td>
+                        <td id="Mean1">오류 예측 검사</td>
+                        <td id="English2">Comparison Testing</td>
+                        <td id="Mean2">비교 검사</td>
+                        <td id="English3">Boundary Value Analysis</td>
+                        <td id="Mean3">경계값 분석</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Sequential File</td>
+                        <td id="Mean1">순차 파일</td>
+                        <td id="English2">Indexed Sequential Access-Method</td>
+                        <td id="Mean2">색인 순차 파일</td>
+                        <td id="English3">Direct File</td>
+                        <td id="Mean3">직접 파일</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Super Key</td>
+                        <td id="Mean1">슈퍼키</td>
+                        <td id="English2">Candidate Key</td>
+                        <td id="Mean2">후보키</td>
+                        <td id="English3">Primary Key</td>
+                        <td id="Mean3">기본키</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Alternate Key</td>
+                        <td id="Mean1">대체키</td>
+                        <td id="English2">Foreign Key</td>
+                        <td id="Mean2">외래키</td>
+                        <td id="English3">System Catalog</td>
+                        <td id="Mean3">시스템 카탈로그</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">External Schema</td>
+                        <td id="Mean1">외부 스키마</td>
+                        <td id="English2">Conceptual Schema</td>
+                        <td id="Mean2">개념 스키마</td>
+                        <td id="English3">Internal Schema</td>
+                        <td id="Mean3">내부 스키마</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Critical Section</td>
+                        <td id="Mean1">임계 영역</td>
+                        <td id="English2">Mutual Exclusion</td>
+                        <td id="Mean2">상호배제</td>
+                        <td id="English3">Circular Wait</td>
+                        <td id="Mean3">환형 대기</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Virtual Memory</td>
+                        <td id="Mean1">가상 기억 장치</td>
+                        <td id="English2">Temporal Locality</td>
+                        <td id="Mean2">시간 구역성</td>
+                        <td id="English3">Spatial Locality</td>
+                        <td id="Mean3">공간 구역성</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Structured Development Methodology</td>
+                        <td id="Mean1">구조적 방법론</td>
+                        <td id="English2">Information Engineering Methodology</td>
+                        <td id="Mean2">정보공학 방법론</td>
+                        <td id="English3">Object-oriented Engineering Methodology</td>
+                        <td id="Mean3">객체지향 방법론</td>
+                    </tr>
+                    <tr id="title2" align="center">
+                        <td id="English1">Component Based Development</td>
+                        <td id="Mean1">컴포넌트 기반 개발 방법론</td>
+                        <td id="English2">Software Reuse</td>
+                        <td id="Mean2">소프트웨어 재사용</td>
+                        <td id="English3">Software Development Life Cycle</td>
+                        <td id="Mean3">소프트웨어 개발 생명주기</td>
+                    </tr>
+                </table>
+            </div>                         
+        </div>
+    </body>
+</html>

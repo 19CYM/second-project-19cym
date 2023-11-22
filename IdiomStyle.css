@@ -1,0 +1,93 @@
+h1 {
+    font-size: 45px;
+    color: green;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+h6 {
+    font-size: 15px;
+    color: black;
+    text-align: right;
+    border-bottom: 1px solid green;
+    margin: 0px;
+}
+body {
+    margin: 0;
+}
+a {
+    color: green;
+    text-decoration: none;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#grid ol {
+    margin-top: 0px;
+    padding-left: 5px;
+}
+ul {
+    border-right: 1px solid green;
+    width: 80px;
+    height: 420px;
+    margin: 0;
+    padding: 20px;
+    padding-right: 80px;
+    font-size: larger;
+}
+
+#table {
+    margin-left: 45px;
+    margin-top: 10px;
+    font-size: 24px;
+    
+}
+#title {
+    padding: 10px;
+    height: 20px;
+    background-color: grey;
+    color: black;
+}
+#title2 {
+    height: auto;
+}
+#English1 {
+    background-color: gainsboro;
+    color: green;
+}
+#Mean1 {
+    background-color: green;
+    color: black;
+}
+#English2 {
+    background-color: gainsboro;
+    color: green;
+}
+#Mean2 {
+    background-color: green;
+    color: black;
+}
+#English3 {
+    background-color: gainsboro;
+    color: green;
+}
+#Mean3 {
+    background-color: green;
+    color: black;
+}
+
+#wordBtn {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 12px;
+    width: 80px;
+    height: 40px;
+}
+#meanBtn {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    width: 80px;
+    height: 40px;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QW</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="WordIdiomQuestionStyle.css">
+
+        <script>
+            var correct=0, inCorrect=0;
+            var sumCorrect=0;
+            var changed=0;
+
+            function question1(self) {
+                if(self.id == "num1") {
+                    q1.value=1;
+                } else if(self.id == "num2") {
+                    q1.value=2;
+                } else if(self.id == "num3") {
+                    q1.value=3;
+                } else if(self.id == "num4") {
+                    q1.value=4;
+                }
+            }
+            function question2(self) {
+                if(self.id == "num1") {
+                    q2.value=1;
+                } else if(self.id == "num2") {
+                    q2.value=2;
+                } else if(self.id == "num3") {
+                    q2.value=3;
+                } else if(self.id == "num4") {
+                    q2.value=4;
+                }
+            }
+            function question3(self) {
+                if(self.id == "num1") {
+                    q3.value=1;
+                } else if(self.id == "num2") {
+                    q3.value=2;
+                } else if(self.id == "num3") {
+                    q3.value=3;
+                } else if(self.id == "num4") {
+                    q3.value=4;
+                }
+            }
+            function question4(self) {
+                if(self.id == "num1") {
+                    q4.value=1;
+                } else if(self.id == "num2") {
+                    q4.value=2;
+                } else if(self.id == "num3") {
+                    q4.value=3;
+                } else if(self.id == "num4") {
+                    q4.value=4;
+                }
+            }
+            function question5(self) {
+                if(self.id == "num1") {
+                    q5.value=1;
+                } else if(self.id == "num2") {
+                    q5.value=2;
+                } else if(self.id == "num3") {
+                    q5.value=3;
+                } else if(self.id == "num4") {
+                    q5.value=4;
+                }
+            }
+
+
+            function sum(self) {
+                if(changed == 1) {
+                    alert("\"다시 풀기\" 버튼을 누른 후 채점해주세요.");
+                }
+
+                if(changed == 0) {
+                    if(q1.value==1) {//1번 문제의 답은 1
+                        correct=correct+1;
+                    } else {
+                        inCorrect=inCorrect+1;
+                    }
+                    if(q2.value==2) {//2번 문제의 답은 2
+                        correct=correct+1;
+                    } else {
+                        inCorrect=inCorrect+1;
+                    }
+                    if(q3.value==3) {//3번 문제의 답은 3
+                        correct=correct+1;
+                    } else {
+                        inCorrect=inCorrect+1;
+                    }
+                    if(q4.value==1) {//4번 문제의 답은 1
+                        correct=correct+1;
+                    } else {
+                        inCorrect=inCorrect+1;
+                    }
+                    if(q5.value==4) {//5번 문제의 답은 4
+                        correct=correct+1;
+                    } else {
+                        inCorrect=inCorrect+1;
+                    }
+
+                    sumCorrect=correct*20;
+                    alert(sumCorrect + "점\n" + "맞은 개수: " + correct + "\n" + "틀린 개수: " + inCorrect);
+                    changed=1;
+                }
+            }
+
+
+            function restart(self) {
+                q1.value="1~4 보기 중 선택"
+                q2.value="1~4 보기 중 선택"
+                q3.value="1~4 보기 중 선택"
+                q4.value="1~4 보기 중 선택"
+                q5.value="1~4 보기 중 선택"
+
+                sumCorrect=0, correct=0, inCorrect=0;
+                changed=0;
+            }
+
+            function answer(self) {
+                alert("정답\n 1번: 1\n 2번: 2\n 3번: 3\n 4번: 1\n 5번: 4")
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Question Word</h1>
+
+        <h6>19 CYM</h6>
+
+        <div id="grid">
+            <ol>
+                <ul><a href="Home.html">첫 화면</a></ul>
+                <ul><a href="Word.html">단어</a></ul>
+                <ul><a href="Idiom.html">숙어</a></ul>
+            </ol>
+
+            <div id="question">
+                <div>
+                    <p>*유의 사항*<br><br>
+                       버튼을 누르시면 텍스트 상자에 선택하신 답의 번호가 입력됩니다.<br>
+                       버튼을 통해 답을 선택하셔서 텍스트 상자에 입력하세요. 또는 텍스트 상자에 직접 입력하셔도 됩니다.<br>
+                       텍스트 상자에 올바른 답이 입력되지 않으면 오답 처리되니 유의하시기 바랍니다.<br><br><br>
+                    </p>
+
+                    <p>Question1. 다음 중 단어의 뜻이 틀린 것은?</p>
+                    <p>1. analysis: 통합 <input id="num1" type="button" value="선택" onclick="question1(this)"> </p>
+                    <p>2. system: 시스템 <input id="num2" type="button" value="선택" onclick="question1(this)"> </p>
+                    <p>3. software: 소프트웨어 <input id="num3" type="button" value="선택" onclick="question1(this)"> </p>
+                    <p>4. paper: 문서 <input id="num4" type="button" value="선택" onclick="question1(this)"> </p>
+                    <input id="q1" type="text" value="1~4 보기 중 선택">
+                    <br><br>
+                    <p>Question2. 다음 중 단어의 뜻이 틀린 것은?</p>
+                    <p>1. migration: 이식 <input id="num1" type="button" value="선택" onclick="question2(this)"> </p>
+                    <p>2. sprint: 정규화 <input id="num2" type="button" value="선택" onclick="question2(this)"> </p>
+                    <p>3. state: 상태 <input id="num3" type="button" value="선택" onclick="question2(this)"> </p>
+                    <p>4. condition: 조건 <input id="num4" type="button" value="선택" onclick="question2(this)"> </p>
+                    <input id="q2" type="text" value="1~4 보기 중 선택">
+                    <br><br>
+                    <p>Question3. 다음 중 단어의 뜻이 맞는 것은?</p>
+                    <p>1. diagram: 제약조건 <input id="num1" type="button" value="선택" onclick="question3(this)"> </p>
+                    <p>2. abstract: 결함 <input id="num2" type="button" value="선택" onclick="question3(this)"> </p>
+                    <p>3. degree: 차수 <input id="num3" type="button" value="선택" onclick="question3(this)"> </p>
+                    <p>4. garbage: 수집가 <input id="num4" type="button" value="선택" onclick="question3(this)"> </p>
+                    <input id="q3" type="text" value="1~4 보기 중 선택">
+                    <br><br>
+                    <p>Question4. 다음 중 단어의 뜻이 맞는 것은?</p>
+                    <p>1. cardinality: 기수 <input id="num1" type="button" value="선택" onclick="question4(this)"> </p>
+                    <p>2. validation: 완료 <input id="num2" type="button" value="선택" onclick="question4(this)"> </p>
+                    <p>3. anomaly: 암호화 <input id="num3" type="button" value="선택" onclick="question4(this)"> </p>
+                    <p>4. integrity: 영속성 <input id="num4" type="button" value="선택" onclick="question4(this)"> </p>
+                    <input id="q4" type="text" value="1~4 보기 중 선택">
+                    <br><br>
+                    <p>Question5. "결합도" 라는 의미를 가진 단어는?</p>
+                    <p>1. cohesion <input id="num1" type="button" value="선택" onclick="question5(this)"> </p>
+                    <p>2. restructuring <input id="num2" type="button" value="선택" onclick="question5(this)"> </p>
+                    <p>3. confidentiality <input id="num3" type="button" value="선택" onclick="question5(this)"> </p>
+                    <p>4. coupling <input id="num4" type="button" value="선택" onclick="question5(this)"> </p>
+                    <input id="q5" type="text" value="1~4 보기 중 선택">
+                </div>
+                
+                <br><br><br>
+                <input id="check" type="button" value="채점" onclick="sum(this)">
+                <input id="restart" type="button" value="다시 풀기" onclick="restart(this)">
+                <input id="answer" type="button" value="정답 보기" onclick="answer(this)">
+            </div>
+        </div>
+    </body>
+</html>

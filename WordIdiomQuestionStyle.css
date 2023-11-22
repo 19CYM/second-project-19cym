@@ -1,0 +1,44 @@
+h1 {
+    font-size: 45px;
+    color: green;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+h6 {
+    font-size: 15px;
+    color: black;
+    text-align: right;
+    border-bottom: 1px solid green;
+    margin: 0px;
+}
+body {
+    margin: 0;
+}
+a {
+    color: green;
+    text-decoration: none;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#grid ol {
+    margin-top: 0px;
+    padding-left: 5px;
+}
+ul {
+    border-right: 1px solid green;
+    width: 80px;
+    height: 490px;
+    margin: 0;
+    padding: 20px;
+    padding-right: 80px;
+    font-size: larger;
+}
+#question {
+    margin-top: 15px;
+    margin-left: 300px;
+    color: green;
+    font-weight: 700;
+}
